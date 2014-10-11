@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MongoSuite" verbose="1" parallel="tests" thread-count="3">
+
+    <test name="MongoDB27tests">
+        <parameter name="overcastConfig" value="mongodb27"/>
+        <classes>
+            <class name="mongo.MongoTest" />
+        </classes>
+    </test>
+
+    <test name="MongoDB26tests">
+        <parameter name="overcastConfig" value="mongodb26"/>
+        <classes>
+            <class name="mongo.MongoTest" />
+        </classes>
+    </test>
+
+    <test name="MongoDB24tests">
+        <parameter name="overcastConfig" value="mongodb24"/>
+        <classes>
+            <class name="mongo.MongoTest" />
+        </classes>
+    </test>
+
+</suite>
